@@ -1,0 +1,4 @@
+This is implementation of the client side of the WebSocket
+protocol. The implemented version (Draft 75) is out of date and
+incompatible with the current version of the protocol, so this
+code should be considered obselete.

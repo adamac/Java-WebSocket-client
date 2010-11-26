@@ -208,7 +208,7 @@ public class WebSocket {
 			int len = 0;
 			do {
 				b = mInput.read() & 0x7f;
-				len = b * 128 + len;
+				len = len * 128 + b;
 			} while ((b & 0x80) != 0x80);
 			
 			for (int i = 0; i < len; i++) {
